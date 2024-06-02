@@ -1,6 +1,4 @@
 'use client'
-import Link from 'next/link'
-
 interface ButtonProps {
   children: React.ReactNode
   active?: boolean
