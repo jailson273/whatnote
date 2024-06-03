@@ -1,11 +1,9 @@
 'use client'
-import { Button } from '@whatnote/components/Button'
 import { Chord } from '@whatnote/components/Chord'
 import {
   chordFlatScale,
   chordNaturalScale,
-  chordSharpScale,
-  harmonicFieldRules
+  chordSharpScale
 } from '@whatnote/types/Chord'
 import { getHarmonicField } from '@whatnote/util/getHarmonicField'
 import { getProgressions } from '@whatnote/util/getProgression'
@@ -65,7 +63,7 @@ export default function Home() {
       <div className='fixed left-0 top-0 z-10 grid w-full grid-cols-7 shadow-lg'>
         {chordMajor}
       </div>
-      <div className='top-8 mt-14 flex flex-col gap-5'>
+      <div className='top-8 mt-14 flex flex-col gap-5 px-2'>
         {chordChanged && (
           <div className='flex w-full flex-col gap-2'>
             <h4>Campo Harmônico</h4>
